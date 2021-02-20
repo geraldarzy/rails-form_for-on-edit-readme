@@ -9,3 +9,9 @@
   
   <%= submit_tag "Submit Post" %>
 <% end %>
+
+<%= form_for @post do |f|%>
+  <%=f.text_field :title%>
+  <%=f.text_area :description%>
+  <%= f.submit "Update Post"%>
+  <%end%>
